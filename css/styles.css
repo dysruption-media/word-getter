@@ -1,0 +1,14 @@
+.wordbox {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  align-items:center;
+  display: grid;
+}
+
+#word {
+  display: grid;
+  align-self:center;
+  font-size: 3em;
+}

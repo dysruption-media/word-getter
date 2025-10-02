@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>word getter</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/barebones.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-16.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="grid-container full">
+    <div>
+      <h1>word getter</h1>
+      <p>get a random word, filtered by how common it is</p>
+    </div>
+  </div>
+
+  <div class="grid-container halves">
+    <div>
+      <h3>settings</h3>
+      <form id="settingsForm">
+        <div class="row grid-container halves">
+          <div>
+            <label for="minimumInput">most common allowed</label>
+            <input class="u-full-width" type="number" value="100" id="minimumInput">
+          </div>
+          <div>
+            <label for="maximumInput">rarest allowed</label>
+            <input class="u-full-width" type="number" value="47000" id="maximumInput">
+          </div>
+        </div>
+        <button class="button-primary" type="button" onclick="wordGetter()">get</button>
+      </form>
+    </div>
+    <div class="wordbox">
+      <h2 id="word">word</h2>
+    </div>
+  </div>
+<script src="js/en_50k.js"></script>
+<script src="js/wordgetter.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
